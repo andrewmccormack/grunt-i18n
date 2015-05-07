@@ -1,0 +1,5 @@
+{
+
+    "ktxHello" : "Hello",
+    "ktxGoodbye" : "GoodBye"
+}

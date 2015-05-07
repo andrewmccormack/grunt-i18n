@@ -1,0 +1,9 @@
+{
+  "all": {
+    "files": [
+      "app/**/*.js",
+      "test/**/*.js"
+    ],
+    "tasks": ["simplemocha:all"]
+  }
+}

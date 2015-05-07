@@ -1,0 +1,12 @@
+{
+  "name": "grunt-i18n",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-init": "^0.3.2",
+    "grunt-simple-mocha": "^0.4.0",
+    "load-grunt-config": "^0.17.1",
+    "sinon": "^1.14.1"
+  }
+}
