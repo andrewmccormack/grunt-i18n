@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6ab7912-826a-4bc1-b404-b40ab2c1925a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GruntFile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/aliases.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tasks/lib/data-loader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/lib/data-loader.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/data/source/en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/data/source/fr-fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/grunt-i18n.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/grunt_i18n_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tasks/i18n.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/data/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tasks/lib/locale-helper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/lib/locale-helper.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tasks/lib/localised-file.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/lib/localised-file.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/simplemocha.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grunt/watch.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="d6ab7912-826a-4bc1-b404-b40ab2c1925a" name="Default" comment="" />
     <ignored path="grunt-i18n.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
