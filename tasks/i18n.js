@@ -6,20 +6,43 @@
 
 module.exports = function(grunt) {
 
+    var _ = require("lodash");
 
     gtunt.registerMultiTask('i18n-template', 'Generated translated files', function(){
 
-        var dataLoader = require('./lib/data-loader');
-        var localisedFile = require('./lib/localised-file');
+        var dataLoaderFactory = require("./lib/data-loaders")(grunt);
+        var translastionsReader = require('./lib/translastions-reader');
+        var localisedFileFactory = require('./lib/localised-file-factory');
 
         var options = this.options({
-            translations: [],
-            templates: [],
+            resources: {
+                files: []
+            },
             output : {
+                files : [],
                 dir : 'dist',
-                format: '{filename}.{locale}.{ext}'
+                format: '{filename}.{locale}'
+            },
+            success : function(content, file){
+                grunt.verbose.write(file + " created");
+            },
+            error : function(ex) {
+                grunt.log.error(ex.message);
             }
         });
+
+        if(grun.option('debug')) {
+            grunt.log.debug(options);
+        }
+
+        var localisedFiles = localisedFileFactory(grunt, options.output);
+        var reader = translastionsReader(options.resources, dataLoaderFactory);
+            reader.load(function(data){
+                localisedFiles.createFiles(data, options.success, options.error);
+            },
+            options.error
+        );
+
     });
 
 

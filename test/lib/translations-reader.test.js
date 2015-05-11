@@ -3,9 +3,11 @@
  */
 'use strict';
 
-suite('translations-loader', function(){
+suite('translations-reader', function(){
 
+    var proxyquire = require('proxyquire')
     var assert = require('assert');
+    var grunt = require('grunt');
     var sinon = require('sinon');
     var _ = require('lodash');
     var data = {
@@ -13,14 +15,25 @@ suite('translations-loader', function(){
         "tb": "b",
         "tc": "c"
     };
-    var dataloader = sinon.stub().returns(data);
-    var translationsLoader = require(process.cwd() + '/tasks/lib/data-loader.js');
+
+
+    var dataLoaderFactory = {
+        createDataLoader : function(filePath){
+            return {
+                getData : function(){
+                    return data;
+                }
+            }
+        }
+    };
+
+    var translationsLoader = require(process.cwd() + '/tasks/lib/translastions-reader.js');
 
 
     suite('load', function(){
 
         test('should not call callbacks when there are no translation files', function(){
-            var translations = translationsLoader([]);
+            var translations = translationsLoader({files : []}, dataLoaderFactory);
             var success = sinon.mock().never();
             var error = sinon.mock().never();
             translations.load(success, error);
@@ -29,9 +42,9 @@ suite('translations-loader', function(){
         });
 
 
-        test('should  call callbacks when there is at least one  translation file', function(){
-            var files = ["en-gb.json"];
-            var translations = translationsLoader(files, dataloader);
+        test('should  call callbacks when there is at least one translation file', function(){
+            var resources = { files: ["en-gb.json"] };
+            var translations = translationsLoader(resources, dataLoaderFactory);
             var success = sinon.mock().withArgs({
                 locale: "en-gb",
                     data : data,
@@ -44,8 +57,8 @@ suite('translations-loader', function(){
         });
 
         test('should call success callback for each translation file', function(){
-            var files = ["en-gb.json", "fr-fr.json", "de.json", "en-029.json"];
-            var translations = translationsLoader(files, dataloader);
+            var files = ["en-gb.json", "fr-fr.json", "de.json", "en-029.json"] ;
+            var translations = translationsLoader({ files : files }, dataLoaderFactory);
             var success = sinon.spy();
             var error = sinon.mock().never();
             translations.load(success, error);
@@ -62,7 +75,7 @@ suite('translations-loader', function(){
 
         test('should call error when invalid file translation file found', function(){
             var files = [ "fr-fr.json", "de.json", "en-029.json"];
-            var translations = translationsLoader(_.xor(files, ["invalid.json"]), dataloader);
+            var translations = translationsLoader({ files: _.xor(files, ["invalid.json"])}, dataLoaderFactory);
             var success = sinon.spy();
             var error = sinon.spy();
             translations.load(success, error);
@@ -80,7 +93,7 @@ suite('translations-loader', function(){
         test('should call error when data cannot be loaded from file', function(){
             var files = [ "fr-fr.json", "de.json", "en-029.json"];
             var badloader = sinon.stub().throws(new Error("it doesn't work"));
-            var translations = translationsLoader(files, badloader);
+            var translations = translationsLoader({ files : files }, badloader);
             var success = sinon.spy();
             var error = sinon.spy();
             translations.load(success, error);

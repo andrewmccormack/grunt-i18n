@@ -11,14 +11,14 @@ suite('localised-file', function(){
     var grunt = require('grunt');
 
     var cwd = process.cwd();
-    var LocalisedFile = require(process.cwd() + '/tasks/lib/localised-file.js');
+    var LocalisedFile = require(process.cwd() + '/tasks/lib/localised-file-factory.js');
 
     suite('getFile', function(){
 
         var testGetFileNameAndCheckResults =  function(localisedFile, tests){
             tests.forEach(function(test){
                 assert.equal(
-                    localisedFile.getFileName(test.args[0],test.args[1]),
+                    localisedFile.getFileName( test.args[0] ,test.args[1]),
                     path.join(cwd, test.expected)
                 );
             });
@@ -36,7 +36,7 @@ suite('localised-file', function(){
 
         test('should prepend the output directory when the output directory ', function(){
             testGetFileNameAndCheckResults(
-                LocalisedFile(grunt, {outputDir : "dist"}),
+                LocalisedFile(grunt, {dir : "dist"}),
                 [
                     { args: ["index.html", "en-gb"], expected : "dist/index.en-gb.html" },
                     { args: ["app/index.js", "de"], expected : "dist/index.de.js" },
@@ -47,11 +47,22 @@ suite('localised-file', function(){
 
         test('should use the out format passed in the options', function(){
             testGetFileNameAndCheckResults(
-                LocalisedFile(grunt, { outputFormat: "dist/{locale}/{filename}{ext}"}),
+                LocalisedFile(grunt, { format: "dist/{locale}/{filename}"}),
                 [
                     { args: ["index.html", "en-gb"], expected : "dist/en-gb/index.html" },
                     { args: ["app/index.js", "de"], expected : "dist/de/index.js" },
                     { args: ["index.html", "en-gb"], expected : "dist/en-gb/index.html" }
+                ]
+            );
+        });
+
+        test('should add the extension at the end irrespective of the position of locale placeholder', function(){
+            testGetFileNameAndCheckResults(
+                LocalisedFile(grunt, { format: "dist/{filename}-{locale}"}),
+                [
+                    { args: ["index.html", "en-gb"], expected : "dist/index-en-gb.html" },
+                    { args: ["app/index.js", "de"], expected : "dist/index-de.js" },
+                    { args: ["index.html", "en-gb"], expected : "dist/index-en-gb.html" }
                 ]
             );
         });
@@ -80,14 +91,14 @@ suite('localised-file', function(){
             fileMock.expects("read").never();
             fileMock.expects("write").never();
 
-            var localisedFile = LocalisedFile(grunt, { templates : []});
+            var localisedFile = LocalisedFile(grunt, { files : []});
             localisedFile.createFiles(translations);
             fileMock.verify();
         });
 
         test("should write the template output if templates are passed", function(){
             var localisedFile = LocalisedFile(grunt, {
-                templates: ["index.html"]
+                files: ["index.html"]
             });
 
             sinon.stub(grunt.file, "read", function(){

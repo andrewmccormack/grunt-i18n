@@ -1,22 +1,12 @@
 'use strict';
-var _ = require('lodash'),
-    fs = require('fs'),
 
-module.exports = function(files, dataloader){
+module.exports = function(resources, dataLoaderFactory){
 
-    var JsonDataLoader = function(filePath) {
-        var file = fs.readFileSync(filePath);
-        var json = require('json');
-        return json.parse(file);
-    };
-
-
+    var _ = require('lodash');
     var localeHelper = require('./locale-helper')();
-    dataloader = dataloader || JsonDataLoader;
 
-    function TranslationFileReader(files, dataloader){
+    function TranslationFileReader(files){
         this.files = files;
-        this.dataloader = dataloader;
     };
 
     TranslationFileReader.prototype.load = function(success, error) {
@@ -26,7 +16,8 @@ module.exports = function(files, dataloader){
         _.forEach(this.files, function(file) {
             try {
                 var locale = localeHelper.getLocale(file, self.template);
-                var data = self.dataloader(file);
+                var dataLoader = dataLoaderFactory.createDataLoader(file);
+                var data = dataLoader.getData();
                 success({
                     locale: locale,
                     data: data,
@@ -37,7 +28,5 @@ module.exports = function(files, dataloader){
             }
         });
     };
-
-    return new TranslationFileReader(files, dataloader || JsonDataLoader);
-
+    return new TranslationFileReader(resources.files);
 };

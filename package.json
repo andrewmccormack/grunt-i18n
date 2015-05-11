@@ -7,6 +7,7 @@
     "grunt-init": "^0.3.2",
     "grunt-simple-mocha": "^0.4.0",
     "load-grunt-config": "^0.17.1",
+    "proxyquire": "^1.4.0",
     "sinon": "^1.14.1"
   }
 }

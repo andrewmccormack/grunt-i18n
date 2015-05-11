@@ -3,29 +3,23 @@
  */
 'use strict';
 
-
 module.exports = function(grunt, options) {
 
     var _ = require('lodash');
     var fs = require('fs');
     var path = require('path');
 
-    options =_.defaults(options, {
-        translations: [],
-        templates: [],
-        outputDir: "",
-        outputFormat: "{filename}.{locale}.{ext}",
-        onError: function(error) {
-                grunt.log.write("Failed to generate file: " + error.message);
-        }
+    options = _.defaults(options, {
+        files : [],
+        dir : "",
+        format: "{filename}.{locale}"
     });
 
     function LocalisedFile(options){
-        this.files = grunt.files;
-        this.outputDir = options.outputDir;
-        this.outputFormat = options.outputFormat;
-        this.onError = options.onError;
-    }
+        this.templates = options.files;
+        this.outputDir = options.dir;
+        this.outputFormat = options.format;
+    };
 
     LocalisedFile.prototype.onError = function(error){
         grunt.log.write("Failed to generate file")
@@ -38,12 +32,12 @@ module.exports = function(grunt, options) {
         var outputFile = this.outputFormat
             .replace("{locale}", locale)
             .replace("{filename}", filename)
-            .replace("{ext}", ext);
+            + ext;
 
         return path.join(outDir, outputFile);
     };
 
-    LocalisedFile.prototype.createFiles = function(translations, callback){
+    LocalisedFile.prototype.createFiles = function(translations, callback, error){
 
         var self = this;
         if(!translations){
