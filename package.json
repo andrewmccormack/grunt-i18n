@@ -7,6 +7,12 @@
     "type": "git",
     "url": "github:AndrewMcCormack/grunt-i18n.git"
   },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
   "files": [
     "tasks"
   ],
