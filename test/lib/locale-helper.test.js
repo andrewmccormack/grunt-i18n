@@ -10,7 +10,7 @@ var assert = require('assert'),
 
 suite('locale-validator', function(){
 
-    var helper = require(path.join(process.cwd(), 'tasks/lib/locale-helper.js'))(grunt);
+    var helper = require(path.join(process.cwd(), 'tasks/lib/locale-helper.js'))("en-gb");
 
     suite('getLocale', function(){
 
@@ -19,27 +19,23 @@ suite('locale-validator', function(){
             assert.equal(helper.getLocale("ar-YE.html"), "ar-ye");
         });
 
-        test('can not get the locale when the file name is not of the correct format', function () {
-            assert.throws(function(){
-                helper.getLocale("index.js");
-            });
+        test('can not get the locale when the file is fully qualified', function () {
+            assert.equal(helper.getLocale("test/data/default/resources/en-gb.js"), "en-gb");
         });
 
-        test('can get the locale when the file has a template', function () {
-            assert.equal(helper.getLocale("recent-searches.en-gb.js", "recent-searches.{locale}.js"),"en-gb");
-            assert.equal(helper.getLocale("template_ar-YE.html", "template_{locale}.html"), "ar-ye")
+        test('returns the default locale when the locale cannot be ascertained', function () {
+            assert.equal(helper.getLocale("index.js"), "en-gb");
+            assert.equal(helper.getLocale("resource.resx"), "en-gb");
         });
 
-        test('can not get the locale when the filename does not match the template', function () {
-            assert.throws(function(){
-                helper.getLocale("index.en-gb.js", "template.{locale}.js");
-            });
-        });
 
-    })
+        test('can get the locale when the file name fits the expected format', function () {
+            assert.equal(helper.getLocale("recent-searches.de-de.js"),"de-de");
+            assert.equal(helper.getLocale("template.ar-YE.html"), "ar-ye");
+        });
+    });
 
     suite('isValid', function() {
-
 
         function assertAllLocalesAreValidated(locales) {
             _.forEach(locales, function (locale) {
@@ -108,7 +104,7 @@ suite('locale-validator', function(){
                 'syr-sy', 'ta-in', 'te-in', 'tg-cyrl-tj', 'th-th', 'tk-tm', 'tn-za', 'tr-tr', 'tt-ru', 'tzm-latn-dz', 'ug-cn', 'uk-ua', 'ur-pk',
                 'uz-cyrl-uz', 'uz-latn-uz', 'vi-vn', 'wo-sn', 'xh-za', 'yo-ng', 'zh-cn', 'zh-hk', 'zh-mo', 'zh-sg', 'zh-tw', 'zu-za'
             ]);
-        })
+        });
     });
 
 

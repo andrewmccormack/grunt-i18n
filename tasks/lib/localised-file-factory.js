@@ -3,26 +3,24 @@
  */
 'use strict';
 
-module.exports = function(grunt, options) {
+module.exports = function(grunt, templates, options) {
 
     var _ = require('lodash');
-    var fs = require('fs');
     var path = require('path');
-
-    options = _.defaults(options, {
-        files : [],
-        dir : "",
-        format: "{filename}.{locale}"
+    options = _.defaults(options || {}, {
+        outputDir : "",
+        outputFormat: "{filename}.{locale}"
     });
 
-    function LocalisedFile(options){
-        this.templates = options.files;
-        this.outputDir = options.dir;
-        this.outputFormat = options.format;
-    };
+    function LocalisedFile(templates, options){
+        this.templates = templates;
+        this.outputDir = options.outputDir;
+        this.outputFormat = options.outputFormat;
+    }
 
-    LocalisedFile.prototype.onError = function(error){
-        grunt.log.write("Failed to generate file")
+    LocalisedFile.prototype.error = function(error){
+        grunt.log.write("Failed to generate file");
+        throw error;
     };
 
     LocalisedFile.prototype.getFileName = function(file, locale){
@@ -31,8 +29,7 @@ module.exports = function(grunt, options) {
         var filename = path.basename(file, ext);
         var outputFile = this.outputFormat
             .replace("{locale}", locale)
-            .replace("{filename}", filename)
-            + ext;
+            .replace("{filename}", filename) + ext;
 
         return path.join(outDir, outputFile);
     };
@@ -45,18 +42,26 @@ module.exports = function(grunt, options) {
         }
 
         callback = callback || _.noop;
+        error = error || this.error;
         _.forEach(this.templates, function(template){
-            var templateString = grunt.file.read(template);
-            var outputFile = self.getFileName(template,translations.locale);
-            var content = grunt.template.process(templateString, { data : translations.data });
+            try {
+                var templateString = grunt.file.read(template);
+                var outputFile = self.getFileName(template, translations.locale);
+                var content = grunt.template.process(templateString, {data: translations.data});
 
-            callback({
-                content: content,
-                file: outputFile
-            });
-            grunt.file.write(outputFile, content);
+                callback({
+                    locale: translations.locale,
+                    content: content,
+                    file: outputFile
+                });
+                grunt.file.write(outputFile, content);
+            }
+            catch (ex)
+            {
+                error(ex);
+            }
         });
     };
 
-    return new LocalisedFile(options);
+    return new LocalisedFile(templates || [], options);
 };

@@ -1,0 +1,31 @@
+<section id="native-login" class="primary">
+    <h3><%= ktxtAccounts_LoginNativeTitle %></h3>
+    <p class="account-summary">
+        <%= ktxtAccounts_LoginRegisterNoAccount %>
+        <a href="register"><%= ktxtAccounts_LoginRegisterLink %></a>
+    </p>
+    <em></em>
+    <form method="POST">
+        <ul>
+            <li class="email text">
+                <label for="Email"><%= ktxtAccounts_LoginLabelEmail %></label>
+                <input id="Email" name="Email" placeholder="<%= ktxtAccounts_LoginLabelEmail %>" type="text" value="">
+                <output></output>
+            </li>
+            <li class="password text">
+                <label for="Password"><%= ktxtAccounts_LoginLabelPassword %></label>
+                <input autocomplete="off" id="Password" name="Password" placeholder="<%= ktxtAccounts_LoginLabelPassword %>" type="password">
+            </li>
+            <li class="password checkbox">
+                <label for="show-password"><%= ktxtAccounts_ShowPassword %></label><input type="checkbox" id="show-password" />
+            </li>
+            <li class="checkbox">
+                <label for="persist-login"><%= ktxtAccounts_LoginKeepMeLoggedIn %></label><input type="checkbox" checked="checked" id="persist-login" />
+            </li>
+            <li class="submit">
+                <button id="button-native-login" type="button" class="button"><span><%= ktxtAccounts_LoginTitle %></span></button>
+            </li>
+        </ul>
+    </form>
+    <a href="/uk/en-GB/ForgetPassword" id="reset-password" target="_blank"><%= ktxtAccounts_LoginForgottenPassword %></a>
+</section>

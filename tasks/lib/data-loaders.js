@@ -1,32 +1,60 @@
 
+
+
 module.exports = function(grunt) {
 
-    var _ = require('lodash'),
-        path = require('path'),
-        fs = require('fs');
+    var path = require('path');
+    var expat = require("node-expat");
 
-    var JsonDataLoader = function (filePath) {
-        this.file = filePath;
+    var DataLoader = function(grunt) {
     };
 
-    JsonDataLoader.prototype.getData = function(){
-        return grunt.file.readJSON(this.file);
+    DataLoader.prototype.resx = function(file) {
+        var xml = grunt.file.read(file,  {endoding : "utf-8"});
+        var parser = new expat.Parser("UTF-8");
+        var resourceName, value;
+        var data = {};
+        parser.on('startElement', function(name, attrs){
+            if(name === "data") {
+                resourceName = attrs["name"];
+                data[resourceName] = "";
+                return;
+            }
+            if(name === "value"){
+                return;
+            }
+            resourceName = "";
+        });
+
+        parser.on("text", function(text){
+            if(resourceName !== "" && /\S/.test(text)) {
+                data[resourceName] = text;
+            }
+        });
+
+        var result = parser.parse(xml);
+        if(!result){
+            throw parser.getError();
+        }
+        return data;
     };
 
-    var DataLoaderFactory = function() {
+    DataLoader.prototype.json = function(file){
+        return grunt.file.readJSON(file);
     };
 
-    DataLoaderFactory.prototype.createDataLoader = function(filePath){
+    DataLoader.prototype.getData = function(filePath){
         var ext = path.extname(filePath);
-
         switch(ext){
             case ".json":
             case ".js":
-                return JsonDataLoader();
-            defaults:
-                throw new Error("No data loader for given file " + filepath);
+                return this.json(filePath);
+            case ".resx":
+                return this.resx(filePath);
+            default:
+                throw new Error("No data loader for given file " + filePath);
         }
     };
 
-    return DataLoaderFactory();
+    return new DataLoader(grunt);
 };

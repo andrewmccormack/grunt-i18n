@@ -1,0 +1,33 @@
+<section id="native-login" class="primary">
+    <h3>Log in with your Skyscanner account</h3>
+    <p class="account-summary">
+        No Skyscanner account?
+        <a href="/uk/en-GB/Widgets/Registration">Register here</a>
+    </p>
+    <em></em>
+    <form method="POST">
+
+        <ul>
+            <li class="email text">
+                <label for="Email">Email address</label>
+                <input id="Email" name="Email" placeholder="Email address" type="text" value="">
+                <output></output>
+            </li>
+            <li class="password text success">
+                <label for="Password">Password</label>
+                <input autocomplete="off" id="Password" name="Password" placeholder="Password" type="password">
+                <output></output>
+            </li>
+            <li class="password checkbox">
+                <label for="show-password">Show password</label><input type="checkbox" id="show-password">
+            </li>
+            <li class="checkbox">
+                <label for="persist-login">Keep me logged in</label><input type="checkbox" checked="checked" id="persist-login">
+            </li>
+            <li class="submit">
+                <button id="button-native-login" type="button" class="button"><span>Log in</span></button>
+            </li>
+        </ul>
+    </form>
+    <a href="/uk/en-GB/ForgetPassword" id="reset-password" target="_blank">Forgotten your password?</a>
+</section>

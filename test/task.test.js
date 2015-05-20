@@ -5,42 +5,40 @@
 
 suite('grunt-i18n-template config', function() {
 
-    var path = require('path');
     var _ = require('lodash');
+    var path = require('path');
     var assert = require('assert');
+    var fs = require('fs');
+    var execSync = require('child_process').exec;
+    var execOptions = {
+        cwd: path.join(__dirname, '..')
+    };
 
-    var tasksDir = path.join(process.cwd(), "tasks");
-    var expectedDir = path.join((process.cwd(), "test/expected/"));
-    var tempDir = path.join((process.cwd(), "test/temp"));
+    function executeGruntTaskWithConfig(configName, callback){
+
+        var expected = path.join(process.cwd(), "test/expected/", configName);
+        var temp = path.join(process.cwd(), "test/temp", configName);
+        var child = exec('grunt i18n-template:'  + configName, execOptions);
+
+        child.on("exit", function(){
+            fs.readdir(temp, function (err, files) {
+                _.forEach(files, function (file) {
+                    var expectedFile = path.join(expected, file);
+                    fs.readFile(expectedFile, function (err, data) {
+                        var expecteFile = path.join(expected, file);
+                        var expectedData = fs.readFileSync(expecteFile);
+                        assert.deepEqual(data, expectedData);
+                    });
+                });
+            });
+        });
+
+    }
+
+
 
     test('when the config has a single value', function() {
-
-
-
-        var grunt = require('grunt');
-
-        grunt.file.delete(tempDir);
-        grunt.initConfig({
-            'i18n-template': {
-                resources: {
-                    files: ['test/data/resources/**.js']
-                },
-                output: {
-                    files: ['test/fixtures/singleTarget/index.html'],
-                    dir: 'test/temp/',
-                    format: '{filename}.{locale}'
-                }
-            }
-        });
-        grunt.loadTasks(tasksDir);
-        grunt.registerTask('default', ['i18n-template']);
-        grunt.task.run('default');
-
-        var dir = path.join(expectedDir, 'singleTarget');
-        grunt.file.recurse(dir, function(abspath, root, subdir, filename){
-            assert(grunt.file.exists(tempDir, filename));
-        });
-
+        executeGruntTaskWithConfig('default');
     });
 
 

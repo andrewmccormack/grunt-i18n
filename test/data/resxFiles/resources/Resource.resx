@@ -1,0 +1,1551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ktx_Accounts_AccountManagementTitle" xml:space="preserve">
+    <value>Manage your account</value>
+  </data>
+  <data name="ktxAccounts_CookiesBlockedFooter" xml:space="preserve">
+    <value>&lt;a href='@@privacyPolicyUrl@@' target='_blank'&gt;Click here&lt;/a&gt; to view our privacy policy and see how we use cookies</value>
+  </data>
+  <data name="ktxAccounts_PasswordResetEmailSentHeader" xml:space="preserve">
+    <value>Check your inbox</value>
+  </data>
+  <data name="ktxAccounts_PasswordResetEmailSentText" xml:space="preserve">
+    <value>We’ll send you an email in a moment to reset your password securely. Once you receive the email, please click the “Reset Password” button within the next 24 hours to reset your password.</value>
+  </data>
+  <data name="ktxAccounts_PasswordResetErrorOccurred" xml:space="preserve">
+    <value>An Error occured. Please try again later</value>
+  </data>
+  <data name="ktxAccounts_PasswordResetTitle" xml:space="preserve">
+    <value>Reset password</value>
+  </data>
+  <data name="ktxt_AccountsResetEmailNotSent" xml:space="preserve">
+    <value>Reset password email sent failed. Please try agian later.</value>
+  </data>
+  <data name="ktxtAccounts_AuthResponseCode_200" xml:space="preserve">
+    <value>Welcome back!</value>
+  </data>
+  <data name="ktxtAccounts_AuthResponseCode_201" xml:space="preserve">
+    <value>Welcome to Skyscanner!</value>
+  </data>
+  <data name="ktxtAccounts_AuthResponseCode_202" xml:space="preserve">
+    <value>Please provide a valid email address to complete the login.</value>
+  </data>
+  <data name="ktxtAccounts_AuthResponseCode_400" xml:space="preserve">
+    <value>Sorry, please check your details and try again.</value>
+  </data>
+  <data name="ktxtAccounts_AuthResponseCode_401" xml:space="preserve">
+    <value>Email and password don't match. Try again or &lt;a href='@@registrationUrl@@'&gt;register&lt;/a&gt; with Skyscanner.</value>
+  </data>
+  <data name="ktxtAccounts_AuthResponseCode_403" xml:space="preserve">
+    <value>You haven't confirmed your email. Check your inbox and click on the link to confirm.</value>
+  </data>
+  <data name="ktxtAccounts_AuthResponseCode_409" xml:space="preserve">
+    <value>You have already registered with Skyscanner. Access your account by &lt;a href='@@loginLink@@'&gt;logging in&lt;/a&gt;.</value>
+  </data>
+  <data name="ktxtAccounts_AuthResponseCode_ErrorCancel" xml:space="preserve">
+    <value>Please ensure you complete the social login or &lt;a href='@@registrationUrl@@'&gt;register&lt;/a&gt; directly with Skyscanner.</value>
+  </data>
+  <data name="ktxtAccounts_AuthResponseCode_ErrorDefault" xml:space="preserve">
+    <value>Sorry, we appear to have a problem logging you in. Please try again in a moment.</value>
+  </data>
+  <data name="ktxtAccounts_AuthResponseCode_IpBlocked403" xml:space="preserve">
+    <value>You entered incorrect details too many times. Try again in 5 minutes or &lt;a href='@@resetPasswordUrl@@' target='_blank'&gt;reset&lt;/a&gt; your password.</value>
+  </data>
+  <data name="ktxtAccounts_AuthResponseCode_Social401" xml:space="preserve">
+    <value>There is a problem connecting to your social account. Try again or register directly with Skyscanner.</value>
+  </data>
+  <data name="ktxtAccounts_AuthResponseCode_SuccessDefault" xml:space="preserve">
+    <value>You are already logged in.</value>
+  </data>
+  <data name="ktxtAccounts_BackToLogIn" xml:space="preserve">
+    <value>Back to Log in</value>
+  </data>
+  <data name="ktxtAccounts_ChangeEmailErrorOccurred" xml:space="preserve">
+    <value>Unable to change your email. Please try again later.</value>
+  </data>
+  <data name="ktxtAccounts_ChangeEmailUserAlreadyExists" xml:space="preserve">
+    <value>Another user already exists with that email address.</value>
+  </data>
+  <data name="ktxtAccounts_ChangePasswordErrorOccurred" xml:space="preserve">
+    <value>Unable to change your password. Please try again later.</value>
+  </data>
+  <data name="ktxtAccounts_ChangePasswordInvalidPassword" xml:space="preserve">
+    <value>The password entered is not recognised. Please provide your existing password.</value>
+  </data>
+  <data name="ktxtAccounts_CookiesBlockedHeading" xml:space="preserve">
+    <value>Error: Cookies are blocked</value>
+  </data>
+  <data name="ktxtAccounts_CookiesBlockedMessage" xml:space="preserve">
+    <value>Please check your browser’s cookie settings and ensure BOTH cookies and third-party cookies are enabled. Skyscanner uses cookies for a separate authentication server to keep your account details safe and secured and to enhance your experience with our services.</value>
+  </data>
+  <data name="ktxtAccounts_Done" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="ktxtAccounts_EmailConfirmationActivationFailedTitle" xml:space="preserve">
+    <value>We were unable to activate your account</value>
+  </data>
+  <data name="ktxtAccounts_EmailConfirmationInvalidTokenTitle" xml:space="preserve">
+    <value>Your link is invalid or has expired, please try to register again.</value>
+  </data>
+  <data name="ktxtAccounts_EmailConfirmationWelcomeText" xml:space="preserve">
+    <value>Start the journey by logging in with your email and password below.</value>
+  </data>
+  <data name="ktxtAccounts_EmailConfirmationWelcomeTitle" xml:space="preserve">
+    <value>Welcome to Skyscanner!</value>
+  </data>
+  <data name="ktxtAccounts_EmailPrompt" xml:space="preserve">
+    <value>your@email.com</value>
+  </data>
+  <data name="ktxtAccounts_ExistingPasswordPrompt" xml:space="preserve">
+    <value>Your existing password</value>
+  </data>
+  <data name="ktxtAccounts_FootnoteText" xml:space="preserve">
+    <value>Just in case you cannot find our email in your inbox, please check the spam filter and add "@mailer.skyscanner.net" as a safe sender to receive our emails.</value>
+  </data>
+  <data name="ktxtAccounts_LoginActivatedHeading" xml:space="preserve">
+    <value>Congratulations</value>
+  </data>
+  <data name="ktxtAccounts_LoginActivatedLink" xml:space="preserve">
+    <value>Log in now</value>
+  </data>
+  <data name="ktxtAccounts_LoginButtonFacebook" xml:space="preserve">
+    <value>Log in with Facebook</value>
+  </data>
+  <data name="ktxtAccounts_LoginFacebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="ktxtAccounts_LoginForgottenPassword" xml:space="preserve">
+    <value>Forgotten your password?</value>
+  </data>
+  <data name="ktxtAccounts_LoginForgottenPasswordTitle" xml:space="preserve">
+    <value>To reset your password, please enter your email address below:</value>
+  </data>
+  <data name="ktxtAccounts_LoginKeepMeLoggedIn" xml:space="preserve">
+    <value>Keep me logged in</value>
+  </data>
+  <data name="ktxtAccounts_LoginLabelEmail" xml:space="preserve">
+    <value>Email address</value>
+  </data>
+  <data name="ktxtAccounts_LoginLabelPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ktxtAccounts_LoginNativeTitle" xml:space="preserve">
+    <value>Log in with your Skyscanner account</value>
+  </data>
+  <data name="ktxtAccounts_LoginNowTitle" xml:space="preserve">
+    <value>Log in now</value>
+  </data>
+  <data name="ktxtAccounts_LoginRegisterLink" xml:space="preserve">
+    <value>Register here</value>
+  </data>
+  <data name="ktxtAccounts_LoginRegisterMessage" xml:space="preserve">
+    <value>Don't have a Skyscanner account?</value>
+  </data>
+  <data name="ktxtAccounts_LoginSocialTitle" xml:space="preserve">
+    <value>Log in with your social network</value>
+  </data>
+  <data name="ktxtAccounts_LoginStatusAccepted" xml:space="preserve">
+    <value>Please provide a valid email address to complete the login.</value>
+  </data>
+  <data name="ktxtAccounts_LoginTitle" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="ktxtAccounts_LoginTutorialHeading" xml:space="preserve">
+    <value>Why Log in?</value>
+  </data>
+  <data name="ktxtAccounts_LoginTutorialText" xml:space="preserve">
+    <value>Log in with Skyscanner to save more of your Recent Searches. You can connect with your email and password or your Facebook account, so it's fast and simple.</value>
+  </data>
+  <data name="ktxtAccounts_LogoutTitle" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="ktxtAccounts_ManageChangeEmailTitle" xml:space="preserve">
+    <value>Change your email</value>
+  </data>
+  <data name="ktxtAccounts_ManageChangePasswordTitle" xml:space="preserve">
+    <value>Change your password</value>
+  </data>
+  <data name="ktxtAccounts_ManageLabelCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ktxtAccounts_ManageLabelEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ktxtAccounts_ManageLabelEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ktxtAccounts_ManageLabelPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ktxtAccounts_ManageLabelUpdate" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="ktxtAccounts_ManageLabelYourEmail" xml:space="preserve">
+    <value>Your email</value>
+  </data>
+  <data name="ktxtAccounts_ManageTutorialHeading" xml:space="preserve">
+    <value>Edit your account</value>
+  </data>
+  <data name="ktxtAccounts_ManageTutorialText" xml:space="preserve">
+    <value>You can change your email and password settings in the account management area.</value>
+  </data>
+  <data name="ktxtAccounts_MinimumPasswordLengthPrompt" xml:space="preserve">
+    <value>Minimum 8 characters</value>
+  </data>
+  <data name="ktxtAccounts_NoControllerFound" xml:space="preserve">
+    <value>No controller found</value>
+  </data>
+  <data name="ktxtAccounts_NoControllerFoundFormat" xml:space="preserve">
+    <value>No controller found for @@controllerName@@</value>
+  </data>
+  <data name="ktxtAccounts_PasswordRegisterPrompt" xml:space="preserve">
+    <value>Minimum 8 characters, and not your email account name</value>
+  </data>
+  <data name="ktxtAccounts_PasswordReset" xml:space="preserve">
+    <value>Reset password</value>
+  </data>
+  <data name="ktxtAccounts_PasswordResetInvalidEmail" xml:space="preserve">
+    <value>The Email entered is not recognised. Try again.</value>
+  </data>
+  <data name="ktxtAccounts_PasswordResetInvalidToken" xml:space="preserve">
+    <value>Your token is Invalid or has expired. Retry resetting your password.</value>
+  </data>
+  <data name="ktxtAccounts_PasswordResetInvalidToken_2" xml:space="preserve">
+    <value>Sorry, the link is invalid or has already expired. Please try resetting your password again.</value>
+  </data>
+  <data name="ktxtAccounts_PasswordResetSuccess" xml:space="preserve">
+    <value>Password Reset Successful</value>
+  </data>
+  <data name="ktxtAccounts_PasswordResetSuccess_2" xml:space="preserve">
+    <value>We have successfully updated your password.</value>
+  </data>
+  <data name="ktxtAccounts_PasswordResetTutorialHeading" xml:space="preserve">
+    <value>Forgotten your password?</value>
+  </data>
+  <data name="ktxtAccounts_PasswordResetTutorialText" xml:space="preserve">
+    <value>Enter your email and we’ll send you instructions on how to reset your password.</value>
+  </data>
+  <data name="ktxtAccounts_PasswordRetypePrompt" xml:space="preserve">
+    <value>Type your password again to verify</value>
+  </data>
+  <data name="ktxtAccounts_RegisterBadRequest" xml:space="preserve">
+    <value>There's a technical problem with your registration. Please try again.</value>
+  </data>
+  <data name="ktxtAccounts_RegisterServiceUnavailable" xml:space="preserve">
+    <value>Sorry, we have technical problem. Please try again in a moment.</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationCheckEmail" xml:space="preserve">
+    <value>We’ll send you a confirmation email in a moment. Once you receive the email, please click the “Confirm Email” button to verify your email address.</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationConfirmEmail" xml:space="preserve">
+    <value>Confirm your email address</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationLabelEmail" xml:space="preserve">
+    <value>Email address</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationLabelNewPassword" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationLabelNewPasswordRetype" xml:space="preserve">
+    <value>Confirm your new password</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationLabelOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationLabelPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationLabelPasswordRetype" xml:space="preserve">
+    <value>Confirm your password</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationLoginLink" xml:space="preserve">
+    <value>Log in with existing account</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationSubmit" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationTermsMessage" xml:space="preserve">
+    <value>By clicking "Register" you agree to Skyscanner's &lt;a href='@@termsAndConditionsUrl@@' target='_blank'&gt;Terms of Service&lt;/a&gt;</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationTitle" xml:space="preserve">
+    <value>Register with Skyscanner</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationTutorialHeading" xml:space="preserve">
+    <value>Why register?</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationTutorialText" xml:space="preserve">
+    <value>Join Skyscanner to save more of your Recent Searches. You can connect with your email and password, it only takes a moment and it's free.</value>
+  </data>
+  <data name="ktxtAccounts_RegistrerWithOtherEmail" xml:space="preserve">
+    <value>(Register with a different email address)</value>
+  </data>
+  <data name="ktxtAccounts_ResendConfirmation" xml:space="preserve">
+    <value>Resend Email</value>
+  </data>
+  <data name="ktxtAccounts_ResendConfirmationEmail" xml:space="preserve">
+    <value>Resend confirmation</value>
+  </data>
+  <data name="ktxtAccounts_ResendEmailFailure" xml:space="preserve">
+    <value>We were unable to resend the confirmation email - please try again</value>
+  </data>
+  <data name="ktxtAccounts_Validation_EmailChangeInvalid" xml:space="preserve">
+    <value>Email address should be different from your current email address</value>
+  </data>
+  <data name="ktxtAccounts_Validation_EmailInvalid" xml:space="preserve">
+    <value>Ensure email is valid (your@mail.com)</value>
+  </data>
+  <data name="ktxtAccounts_Validation_EmailRequired" xml:space="preserve">
+    <value>Enter email address</value>
+  </data>
+  <data name="ktxtAccounts_Validation_MaximumEmailLength" xml:space="preserve">
+    <value>Maximum 175 characters</value>
+  </data>
+  <data name="ktxtAccounts_Validation_MaximumPasswordLength" xml:space="preserve">
+    <value>Maximum 100 characters</value>
+  </data>
+  <data name="ktxtAccounts_Validation_PasswordLength" xml:space="preserve">
+    <value>Minimum 8 characters</value>
+  </data>
+  <data name="ktxtAccounts_Validation_PasswordMatchesEmailMessage" xml:space="preserve">
+    <value>Password can't be your email account name</value>
+  </data>
+  <data name="ktxtAccounts_Validation_PasswordRequired" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+  <data name="ktxtAccounts_Validation_PasswordsDoNotMatchMessage" xml:space="preserve">
+    <value>Password doesn't match</value>
+  </data>
+  <data name="ktxtAccounts_Validation_PasswordStrength_00" xml:space="preserve">
+    <value>weak</value>
+  </data>
+  <data name="ktxtAccounts_Validation_PasswordStrength_50" xml:space="preserve">
+    <value>good</value>
+  </data>
+  <data name="ktxtAccounts_Validation_PasswordStrength_75" xml:space="preserve">
+    <value>strong</value>
+  </data>
+  <data name="ktxtAccounts_Validation_PasswordStrength_Label" xml:space="preserve">
+    <value>Password strength is</value>
+  </data>
+  <data name="ktxtAccounts_Validation_PasswordStrength_TooShort" xml:space="preserve">
+    <value>too short</value>
+  </data>
+  <data name="ktxtReal404NotRecognized" xml:space="preserve">
+    <value>We were unable to find the page you were looking for. There might be a problem with our system, or perhaps the address entered was wrong?</value>
+  </data>
+  <data name="ktxtReal500ServerError" xml:space="preserve">
+    <value>We were unable to process your request. There may be a problem with our system. Please try again  later.</value>
+  </data>
+  <data name="ktxtRealErrorPagesSearch" xml:space="preserve">
+    <value>Back to the homepage</value>
+  </data>
+  <data name="ktxtRealErrorSorry" xml:space="preserve">
+    <value>Sorry, there seems to be a problem!</value>
+  </data>
+  <data name="ktxtPriceAlerts_AddToAddressBookAndSafeSenders" xml:space="preserve">
+    <value>To make sure alerts reach your inbox, please add &lt;em&gt;@@email@@&lt;/em&gt; to your email Address Book or Safe Senders list.</value>
+  </data>
+  <data name="ktxtPriceAlerts_CantConfirmEmail" xml:space="preserve">
+    <value>We can't confirm your address right now.</value>
+  </data>
+  <data name="ktxtPriceAlerts_CompanyName" xml:space="preserve">
+    <value>Skyscanner</value>
+  </data>
+  <data name="ktxtPriceAlerts_HomepageLink" xml:space="preserve">
+    <value>&lt;a href="@@link@@"&gt;@@companyName@@ homepage&lt;/a&gt;</value>
+  </data>
+  <data name="ktxtPriceAlerts_SorryAnErrorHasOccured" xml:space="preserve">
+    <value>We're sorry, an error has occurred</value>
+  </data>
+  <data name="ktxtPriceAlerts_Thanks" xml:space="preserve">
+    <value>Thanks!</value>
+  </data>
+  <data name="ktxtPriceAlerts_ThanksForConfirmation" xml:space="preserve">
+    <value>Thanks for your confirmation! Your Price Alert is all ready to go.</value>
+  </data>
+  <data name="ktxtPriceAlerts_TryLaterOrContactUs" xml:space="preserve">
+    <value>Please try again later. If you keep having problems, please &lt;a href="@@link@@" title="Contact Us"&gt;Contact Us&lt;/a&gt;.</value>
+  </data>
+  <data name="ktxtPriceAlerts_DateFormatLong" xml:space="preserve">
+    <value>ddd, dd MMM yyyy</value>
+  </data>
+  <data name="ktxtPriceAlerts_DateInfo" xml:space="preserve">
+    <value>Date information</value>
+  </data>
+  <data name="ktxtPriceAlerts_HeaderPlaceToPlace" xml:space="preserve">
+    <value>@@outboundPlace@@ (@@outboundCode@@) to @@inboundPlace@@ (@@inboundCode@@)</value>
+  </data>
+  <data name="ktxtPriceAlerts_PriceAlertsDeleted" xml:space="preserve">
+    <value>Your Price Alert(s) have been deleted.</value>
+  </data>
+  <data name="ktxtPriceAlerts_RouteInfo" xml:space="preserve">
+    <value>Route information</value>
+  </data>
+  <data name="ktxtPriceAlerts_StopSendingEmailsAbout" xml:space="preserve">
+    <value>We'll stop sending you emails about:</value>
+  </data>
+  <data name="ktxtPriceAlerts_VisitTheHomepage" xml:space="preserve">
+    <value>Visit the &lt;a href="@@link@@"&gt;@@companyName@@ homepage&lt;/a&gt;</value>
+  </data>
+  <data name="ktxtAccounts_ForgotPasswordTutorial" xml:space="preserve">
+    <value>Don't worry, you can easily reset your password here.</value>
+  </data>
+  <data name="ktxtAccounts_ForgotPasswordTutorialHeading" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="ktxtAccounts_LoginTutorialNative" xml:space="preserve">
+    <value>Log in with Skyscanner to create Price Alerts, save Recent Searches and much more. You can connect with your email and password, it only takes a moment and it’s free. Welcome!</value>
+  </data>
+  <data name="ktxtAccounts_LoginTutorialNativeSocial" xml:space="preserve">
+    <value>Log in with Skyscanner to create Price Alerts, save Recent Searches and much more.  You can connect with your email and password, or with your Facebook account. It only takes a moment and it’s free. Welcome!</value>
+  </data>
+  <data name="ktxtAccounts_ManagePriceAlertsTutorial" xml:space="preserve">
+    <value>Don’t miss the best price! Create or remove your Price Alerts here.</value>
+  </data>
+  <data name="ktxtAccounts_ManagePriceAlertsTutorialHeading" xml:space="preserve">
+    <value>Manage your Price Alerts</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationTutorialNative" xml:space="preserve">
+    <value>Sign up to create Price Alerts, save Recent Searches and much more. You can connect with your email and password, it only takes a moment and it’s free. Welcome!</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationTutorialNativeSocial" xml:space="preserve">
+    <value>Sign up to create Price Alerts, save Recent Searches and much more.  You can connect with your email and password, or with your Facebook account. It only takes a moment and it’s free. Welcome!</value>
+  </data>
+  <data name="ktxtPriceAlerts_AlertLimitReached" xml:space="preserve">
+    <value>You have already reached the maximum number of price alerts. Delete some price alerts to add others.</value>
+  </data>
+  <data name="ktxtPriceAlerts_BestPricePerPerson" xml:space="preserve">
+    <value>Best price, per person</value>
+  </data>
+  <data name="ktxtPriceAlerts_ChangeSince" xml:space="preserve">
+    <value>since @@date@@</value>
+  </data>
+  <data name="ktxtPriceAlerts_CheckedEveryDay" xml:space="preserve">
+    <value>Price is checked every 24 hours</value>
+  </data>
+  <data name="ktxtPriceAlerts_CheckPricesInMonth" xml:space="preserve">
+    <value>Check prices in @@yearMonth@@</value>
+  </data>
+  <data name="ktxtPriceAlerts_Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="ktxtPriceAlerts_CreateAlert" xml:space="preserve">
+    <value>Create price alert</value>
+  </data>
+  <data name="ktxtPriceAlerts_DialogCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ktxtPriceAlerts_DialogOk" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ktxtPriceAlerts_LastCheckedInHours" xml:space="preserve">
+    <value>Checked @@numHours@@ hour(s) ago</value>
+  </data>
+  <data name="ktxtPriceAlerts_LastCheckedOnDate" xml:space="preserve">
+    <value>Checked @@numDays@@ day(s) ago</value>
+  </data>
+  <data name="ktxtPriceAlerts_MultiPassengerInfo" xml:space="preserve">
+    <value>Price alerts will monitor the price for one adult passenger.</value>
+  </data>
+  <data name="ktxtPriceAlerts_NoChange" xml:space="preserve">
+    <value>No change</value>
+  </data>
+  <data name="ktxtPriceAlerts_NoPricesFound" xml:space="preserve">
+    <value>No prices found</value>
+  </data>
+  <data name="ktxtPriceAlerts_NoPricesTryOtherClass" xml:space="preserve">
+    <value>There might be no flights available for the selected cabin class. Try Economy class from the link below.</value>
+  </data>
+  <data name="ktxtPriceAlerts_NoPricesTryOtherDates" xml:space="preserve">
+    <value>There might be no flights available for your selected dates. Try other dates from the link below.</value>
+  </data>
+  <data name="ktxtPriceAlerts_NumberOfAlerts" xml:space="preserve">
+    <value>Number of alerts: @@numAlerts@@</value>
+  </data>
+  <data name="ktxtPriceAlerts_PriceAlertsHeader" xml:space="preserve">
+    <value>Price Alerts</value>
+  </data>
+  <data name="ktxtPriceAlerts_SearchEconomyClass" xml:space="preserve">
+    <value>Search Economy class flights</value>
+  </data>
+  <data name="ktxtPriceAlerts_SearchNow" xml:space="preserve">
+    <value>Search Now</value>
+    <comment>Replaced by ktxtPriceAlerts_SearchNowLink</comment>
+  </data>
+  <data name="ktxtPriceAlerts_StopAlert" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="ktxtPriceAlerts_StopAlertDialogText" xml:space="preserve">
+    <value>Stop this alert and delete from the list?</value>
+  </data>
+  <data name="ktxtPriceAlerts_TryOtherDates" xml:space="preserve">
+    <value>Try other dates</value>
+  </data>
+  <data name="ktxtAccounts_AccountsHeader" xml:space="preserve">
+    <value>Account Settings</value>
+  </data>
+  <data name="ktxtCabinClassTerm_Business" xml:space="preserve">
+    <value>Business class</value>
+  </data>
+  <data name="ktxtCabinClassTerm_Economy" xml:space="preserve">
+    <value>Economy</value>
+  </data>
+  <data name="ktxtCabinClassTerm_First" xml:space="preserve">
+    <value>First class</value>
+  </data>
+  <data name="ktxtCabinClassTerm_PremiumEconomy" xml:space="preserve">
+    <value>Premium Economy</value>
+  </data>
+  <data name="ktxtCabinClassTerm_Title" xml:space="preserve">
+    <value>Cabin Class</value>
+  </data>
+  <data name="ktxtSearchControls_DepartureDate" xml:space="preserve">
+    <value>Departure date</value>
+  </data>
+  <data name="ktxtSearchControls_From" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="ktxtSearchControls_OneWay_LowerCase" xml:space="preserve">
+    <value>one way</value>
+  </data>
+  <data name="ktxtSearchControls_ReturnDate" xml:space="preserve">
+    <value>Return date</value>
+  </data>
+  <data name="ktxtSearchControls_Return_LowerCase" xml:space="preserve">
+    <value>return</value>
+  </data>
+  <data name="ktxtSearchControls_To" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="ktxt_as_everywhere" xml:space="preserve">
+    <value>Everywhere</value>
+  </data>
+  <data name="ktxt_filter_depart" xml:space="preserve">
+    <value>Depart</value>
+  </data>
+  <data name="ktxt_flex_dates" xml:space="preserve">
+    <value>Whole month</value>
+  </data>
+  <data name="ktxt_one_way" xml:space="preserve">
+    <value>One way</value>
+  </data>
+  <data name="ktxt_sc_any_m" xml:space="preserve">
+    <value>Whole Year</value>
+  </data>
+  <data name="ktxt_sc_cy_c_a" xml:space="preserve">
+    <value>enter a country, city or airport</value>
+  </data>
+  <data name="ktxt_sc_same_places_warn" xml:space="preserve">
+    <value>Searching from and to the same city is not possible.</value>
+  </data>
+  <data name="ktxtPriceAlerts_FailureGetPriceAlertsList" xml:space="preserve">
+    <value>We were unable to retrieve your current price alerts. Please try again later.</value>
+  </data>
+  <data name="ktxtPriceAlerts_TypeCityOrAirport" xml:space="preserve">
+    <value>Type a city or airport</value>
+  </data>
+  <data name="ktxtAccounts_AccountsNavigation" xml:space="preserve">
+    <value>Account Settings</value>
+    <comment>Please copy from ktxtAccounts_AccountsHeader</comment>
+  </data>
+  <data name="ktxtAccounts_LoginToManagePriceAlertsHeader" xml:space="preserve">
+    <value>Login to manage your price alerts</value>
+  </data>
+  <data name="ktxtAccounts_LoginToManagerAccountHeader" xml:space="preserve">
+    <value>Login to manage your account</value>
+  </data>
+  <data name="ktxtAccounts_PriceAlertsNavigation" xml:space="preserve">
+    <value>Price Alerts</value>
+    <comment>Please copy from ktxtPriceAlerts_PriceAlertsHeader</comment>
+  </data>
+  <data name="ktxtPriceAlerts_CreateNewAlert" xml:space="preserve">
+    <value>Create New Price Alert</value>
+  </data>
+  <data name="ktxtPriceAlerts_FormLocationValidation" xml:space="preserve">
+    <value>Please enter From and To locations to create price alert</value>
+  </data>
+  <data name="ktxtPriceAlerts_SearchNowLink" xml:space="preserve">
+    <value>Search now</value>
+  </data>
+  <data name="ktxtPriceAlerts_BackToResultsLink" xml:space="preserve">
+    <value>Back to Results</value>
+  </data>
+  <data name="ktxtPriceAlerts_LoginConfirmedHeader" xml:space="preserve">
+    <value>Thanks! Your price alert has been created.</value>
+  </data>
+  <data name="ktxtPriceAlerts_LoginToManageSummary" xml:space="preserve">
+    <value>Now you can log in to manage all your price alerts.</value>
+  </data>
+  <data name="ktxt_as_any" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="ktxt_filter_return" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="ktxtPriceAlerts_CreatePriceAlertDuplicate" xml:space="preserve">
+    <value>We are already watching these flights for you, please select a different date or route.</value>
+  </data>
+  <data name="ktxtPriceAlerts_CreatePriceAlertFailure" xml:space="preserve">
+    <value>We can't create your price alert right now. Please try again later.</value>
+  </data>
+  <data name="ktxtAccounts_LoginTutorialTextWithSocial" xml:space="preserve">
+    <value>Log in with Skyscanner to create price alerts, save recent searches and much more. You can connect with your email or your social network. It's fast, simple and free.</value>
+  </data>
+  <data name="ktxtAccounts_LoginWeibo" xml:space="preserve">
+    <value>Weibo</value>
+  </data>
+  <data name="ktxtAccounts_LoginTutorialSummaryNative" xml:space="preserve">
+    <value>Log in with Skyscanner to create Price Alerts, save Recent Searches and much more. It's fast, simple and free.</value>
+  </data>
+  <data name="ktxtAccounts_LoginTutorialSummarySocial" xml:space="preserve">
+    <value>Log in with Skyscanner to create Price Alerts, save Recent Searches and much more. You can connect with your email or with your social network. It's fast, simple and free.</value>
+  </data>
+  <data name="ktxtAccounts_PriceAlertsTutorialSummary" xml:space="preserve">
+    <value>Don’t miss the best price! We check prices daily and email you if there's been any change. Create or remove your Price Alerts here.</value>
+  </data>
+  <data name="ktxtAccounts_RegisterTutorialSummaryNative" xml:space="preserve">
+    <value>Sign up with Skyscanner to create Price Alerts, save Recent Searches and much more. It's fast, simple and free.</value>
+  </data>
+  <data name="ktxtAccounts_RegisterTutorialSummarySocial" xml:space="preserve">
+    <value>Sign up with Skyscanner to create Price Alerts, save Recent Searches and much more. You can connect with your email or with your social network. It's fast, simple and free.</value>
+  </data>
+  <data name="ktxtPriceAlerts_CreateFormChildPrompt" xml:space="preserve">
+    <value>2-11 years</value>
+  </data>
+  <data name="ktxtPriceAlerts_CreateFormAdultPrompt" xml:space="preserve">
+    <value>12+ years</value>
+  </data>
+  <data name="ktxtPriceAlerts_CreateFormInfantPrompt" xml:space="preserve">
+    <value>under 2</value>
+  </data>
+  <data name="ktxtPriceAlerts_CreateFormInvalidDepartureDate" xml:space="preserve">
+    <value>Please check the departure date</value>
+  </data>
+  <data name="ktxtPriceAlerts_CreateFormInvalidDeparturePlace" xml:space="preserve">
+    <value>Please enter a valid departure city or airport</value>
+  </data>
+  <data name="ktxtPriceAlerts_CreateFormInvalidDestinationPlace" xml:space="preserve">
+    <value>Please enter a valid destination city or airport</value>
+  </data>
+  <data name="ktxtPriceAlerts_CreateFormInvalidReturnDate" xml:space="preserve">
+    <value>Please check the return date</value>
+  </data>
+  <data name="ktxtBooking_BillingDetailsTitle" xml:space="preserve">
+    <value>3. Billing details</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_BookingWith" xml:space="preserve">
+    <value>You are booking with</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_Edit" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_NextStep" xml:space="preserve">
+    <value>Next step</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_OptionalExtrasTitle" xml:space="preserve">
+    <value>2. Optional extras</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_PassengerDetailsTitle" xml:space="preserve">
+    <value>1. Passenger details</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_ReviewItineraryAndPayTitle" xml:space="preserve">
+    <value>4. Review itinerary and pay</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_SaveAndContinue" xml:space="preserve">
+    <value>Save &amp; continue</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_TripSummaryTitle" xml:space="preserve">
+    <value>Trip summary</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_ViaSkyscanner" xml:space="preserve">
+    <value>via Skyscanner</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_TotalPrice" xml:space="preserve">
+    <value>Total Price @@tag@@@@price@@@@tag@@</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_Airline" xml:space="preserve">
+    <value>Airline: @@airline@@</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_Outbound" xml:space="preserve">
+    <value>OUTBOUND</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_Inbound" xml:space="preserve">
+    <value>INBOUND</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_TravelInsurance" xml:space="preserve">
+    <value>Travel Insurance</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_InsuranceNo" xml:space="preserve">
+    <value>No thanks</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_InsuranceReimburse" xml:space="preserve">
+    <value>Get re-inbursed up to 100% if you have to cancel plans due to reasons like covered illness,injury and more</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_InsuranceReimburseCosts" xml:space="preserve">
+    <value>Re-inburse unexpected costs associated with trip interruption</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_InsuranceSummary" xml:space="preserve">
+    <value>Travel Insurance x@@count@@ passengers</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_InsuranceTerms" xml:space="preserve">
+    <value>This insurance is provided by @@supplier@@ and is underwritten by @@underwriter@@ and is available to residents of the @@country@@.  I acknowledge that I was made aware of the general information about AIG and the Travel Insurance and I agree with the @@tag1@@travel insurance terms and conditions@@tag2@@ and @@tag3@@@@underwriter@@'s pivacy Policy@@tag4@@</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_InsuranceWinningSupport" xml:space="preserve">
+    <value>24/7 award winning support</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_InsuranceYes" xml:space="preserve">
+    <value>Yes - add Travel &amp; cancellation insurance for @@cost@@ per passenger</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_CustomerSupport" xml:space="preserve">
+    <value>Customer support is provided by:</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_ProgramNumber" xml:space="preserve">
+    <value>Program Number</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_Program" xml:space="preserve">
+    <value>Program</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_PleaseSelect" xml:space="preserve">
+    <value>Please select</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_FrequentFlyerInformation" xml:space="preserve">
+    <value>Frequent flyer information (optional)</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_MealPreference" xml:space="preserve">
+    <value>Meal preference</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_AddHoldBaggage" xml:space="preserve">
+    <value>Add hold baggage</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_Female" xml:space="preserve">
+    <value>Female</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_Male" xml:space="preserve">
+    <value>Male</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_IndicateYourGender" xml:space="preserve">
+    <value>Indicate your gender</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_Gender" xml:space="preserve">
+    <value>Gender</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_DateOfBirth" xml:space="preserve">
+    <value>Date of birth</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_EnterYourDateOfBirth" xml:space="preserve">
+    <value>Enter your date of birth</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_EnterYourSurname" xml:space="preserve">
+    <value>Enter your surname</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_Surname" xml:space="preserve">
+    <value>Surname</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_EnterYourFirstName" xml:space="preserve">
+    <value>Enter your first name</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_FirstName" xml:space="preserve">
+    <value>First name(s)</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_PassengerFormInfo" xml:space="preserve">
+    <value>Names must be entered exactly as they appear on passport</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_Passenger" xml:space="preserve">
+    <value>Passenger</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_PassengerType" xml:space="preserve">
+    <value>Passenger - @@type@@</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_PassengerNumType" xml:space="preserve">
+    <value>Passenger @@num@@: @@type@@</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_PassengerNumTypePrimary" xml:space="preserve">
+    <value>Passenger @@num@@: @@tag@@@@type@@, primary contact@@tag@@</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_AddressLine1" xml:space="preserve">
+    <value>Address line 1</value>
+    <comment>address line 1 input label</comment>
+  </data>
+  <data name="ktxtBooking_AddressLine2" xml:space="preserve">
+    <value>Address line 2</value>
+    <comment>address line 2 input label</comment>
+  </data>
+  <data name="ktxtBooking_AgreeAndContinue" xml:space="preserve">
+    <value>Agree &amp; continue</value>
+  </data>
+  <data name="ktxtBooking_BillingAddress" xml:space="preserve">
+    <value>Billing address</value>
+    <comment>Billing address heading</comment>
+  </data>
+  <data name="ktxtBooking_ConfirmEmailAddress" xml:space="preserve">
+    <value>Confirm email address</value>
+    <comment>Confirm email address input label</comment>
+  </data>
+  <data name="ktxtBooking_ConfirmEmailMustMatch" xml:space="preserve">
+    <value>Confirm email must match email</value>
+    <comment>Confirm email address did not match email address input validation msg</comment>
+  </data>
+  <data name="ktxtBooking_ContactDetails" xml:space="preserve">
+    <value>Contact details</value>
+    <comment>Contact details heading</comment>
+  </data>
+  <data name="ktxtBooking_Country" xml:space="preserve">
+    <value>Country</value>
+    <comment>Country input label</comment>
+  </data>
+  <data name="ktxtBooking_EmailAddress" xml:space="preserve">
+    <value>Email address</value>
+    <comment>Email address input label</comment>
+  </data>
+  <data name="ktxtBooking_EnterYourAddress" xml:space="preserve">
+    <value>Enter your address</value>
+    <comment>address input validation msg</comment>
+  </data>
+  <data name="ktxtBooking_EnterYourCountry" xml:space="preserve">
+    <value>Enter your country</value>
+    <comment>Country input validation msg</comment>
+  </data>
+  <data name="ktxtBooking_EnterYourEmailAddress" xml:space="preserve">
+    <value>Enter your email address </value>
+    <comment>Empty email address input validation msg</comment>
+  </data>
+  <data name="ktxtBooking_EnterYourPhoneNumber" xml:space="preserve">
+    <value>Enter your phone number</value>
+    <comment>Phone number input validation message</comment>
+  </data>
+  <data name="ktxtBooking_EnterYourTownCity" xml:space="preserve">
+    <value>Enter your town/city</value>
+    <comment>Town/City input validation msg</comment>
+  </data>
+  <data name="ktxtBooking_InvalidEmailAddress" xml:space="preserve">
+    <value>Invalid email address</value>
+    <comment>Invalid email input validation msg</comment>
+  </data>
+  <data name="ktxtBooking_PaymentOptions" xml:space="preserve">
+    <value>Payment options</value>
+    <comment>Payment options heading</comment>
+  </data>
+  <data name="ktxtBooking_PaymentType" xml:space="preserve">
+    <value>Payment type</value>
+    <comment>Payment type select list label</comment>
+  </data>
+  <data name="ktxtBooking_PhoneNumber" xml:space="preserve">
+    <value>Phone number</value>
+    <comment>Phone number input label</comment>
+  </data>
+  <data name="ktxtBooking_PostCode" xml:space="preserve">
+    <value>Post code</value>
+    <comment>Post code input label</comment>
+  </data>
+  <data name="ktxtBooking_ProviderTermsAndConditions" xml:space="preserve">
+    <value>@@providerName@@ booking terms and conditions</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_ReadAndAgreeToPolicies" xml:space="preserve">
+    <value>I have read and agree to the following policies:</value>
+  </data>
+  <data name="ktxtBooking_ReceiveEmailsFromSkyscanner" xml:space="preserve">
+    <value>Receive occasional emails from Skyscanner and our partners about great offers.</value>
+    <comment>Receive emails from skyscanner and partners checkbox label</comment>
+  </data>
+  <data name="ktxtBooking_SelectPaymentType" xml:space="preserve">
+    <value>Select payment type</value>
+    <comment>Select payment type validation msg</comment>
+  </data>
+  <data name="ktxtBooking_SkyscannerTermsAndConditions" xml:space="preserve">
+    <value>Skyscanner terms and conditions and privacy policy</value>
+    <comment>skyscanner terms and conditions link </comment>
+  </data>
+  <data name="ktxtBooking_ProviderDisclaimerAndConditions" xml:space="preserve">
+    <value>@@providerName@@ disclaimer and terms and conditions of use</value>
+    <comment>skyscanner terms and conditions link </comment>
+  </data>
+  <data name="ktxtBooking_TownCity" xml:space="preserve">
+    <value>Town/city</value>
+    <comment>Town-city input label</comment>
+  </data>
+  <data name="ktxtBooking_CreditCardPaymentFee" xml:space="preserve">
+    <value>Credit card payment fee</value>
+  </data>
+  <data name="ktxtBooking_HideDetails" xml:space="preserve">
+    <value>Hide details</value>
+  </data>
+  <data name="ktxtBooking_OutboundCaps" xml:space="preserve">
+    <value>OUTBOUND</value>
+  </data>
+  <data name="ktxtBooking_Passengers" xml:space="preserve">
+    <value>Passengers</value>
+  </data>
+  <data name="ktxtBooking_PaymentSummary" xml:space="preserve">
+    <value>Payment summary</value>
+  </data>
+  <data name="ktxtBooking_ReturnCaps" xml:space="preserve">
+    <value>RETURN</value>
+  </data>
+  <data name="ktxtBooking_ViewMoreDetails" xml:space="preserve">
+    <value>View more details</value>
+  </data>
+  <data name="ktxtBooking_TotalHours" xml:space="preserve">
+    <value>TOTAL @@Hours@@ HRS</value>
+  </data>
+  <data name="ktxtBooking_FaresIncTaxes" xml:space="preserve">
+    <value>Fares (inc taxes and fees) @@tag@@@@totalCost@@@@tag@@</value>
+  </data>
+  <data name="ktxtBooking_DurationInHours" xml:space="preserve">
+    <value>@@Hours@@ HRS</value>
+  </data>
+  <data name="ktxtBooking_TicketInsurance" xml:space="preserve">
+    <value>Ticket Insurance</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_AirlineTicketGuarantee" xml:space="preserve">
+    <value>Airline ticket guarantee</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_TicketInsurancePerPassengers" xml:space="preserve">
+    <value>Ticket Insurance x@@pass@@ passengers</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_TravelInsurancePerPassengers" xml:space="preserve">
+    <value>Travel Insurance x@@pass@@ passengers</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_TicketInsuranceYes" xml:space="preserve">
+    <value>Yes - add Airline ticket guarantee for @@cost@@ per passenger</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_TravelInsuranceYes" xml:space="preserve">
+    <value>Yes - add Travel &amp; cancellation Insurance for @@cost@@ per passenger</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_FindOutMore" xml:space="preserve">
+    <value>@@tag1@@Find Out More@@tag2@@</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_NoOptionalExtras" xml:space="preserve">
+    <value>Sorry, there are no optional extras available for this flight.</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_TicketInsuranceDescription" xml:space="preserve">
+    <value>Airline ticket guarantee reimburses your ticket if an airline goes bankrupt up to the value of @@price@@ per ticket.</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_TravelInsuranceDescription" xml:space="preserve">
+    <value>Single Trip Insurance will cover any losses arising as a result of events that occur before or during a trip including: emergency medical expenses, theft or loss of baggage and cancellation.</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_AirlineLabel" xml:space="preserve">
+    <value>Airline</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_EnterProgramNumber" xml:space="preserve">
+    <value>Enter program number</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_SelectAirline" xml:space="preserve">
+    <value>Select Airline</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_PaySecurely" xml:space="preserve">
+    <value>Pay securely</value>
+  </data>
+  <data name="ktxtBooking_SecurePayments" xml:space="preserve">
+    <value>Secure payments</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_Warning" xml:space="preserve">
+    <value>Warning</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_Telephone" xml:space="preserve">
+    <value>Telephone</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_GenericErrorTitle" xml:space="preserve">
+    <value>Sorry, there seems to be a problem</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_GenericErrorMsg" xml:space="preserve">
+    <value>We are unable to process your request. There may be an issue with our system.</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_ReturnToSkyscanner" xml:space="preserve">
+    <value>Return to Skyscanner</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_ReturnToSearchResults" xml:space="preserve">
+    <value>Return to search results</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_BookingCancellationTitle" xml:space="preserve">
+    <value>Your booking has been cancelled</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_BookingErrorMsg" xml:space="preserve">
+    <value>We are unable to complete your booking.  Please call @@ProviderName@@ Customer Support on @@ProviderSupportTel@@ or email @@ProviderSupportEmail@@</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_OfficeHours1" xml:space="preserve">
+    <value>@@tag1@@Monday to Friday@@tag2@@ 08:00 – 17:00</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_OfficeHours2" xml:space="preserve">
+    <value>@@tag1@@Saturday and Sunday@@tag2@@ 09:00 – 15:00</value>
+    <comment>Don't send for translation</comment>
+  </data>
+  <data name="ktxtBooking_BaggageSummaryTotalCost" xml:space="preserve">
+    <value>Passenger baggage x @@numberOfPassengersWithBaggage@@</value>
+  </data>
+  <data name="ktxtBooking_BaggageItemOption" xml:space="preserve">
+    <value>@@numOfItems@@ item (@@weight@@kg) - @@price@@</value>
+  </data>
+  <data name="ktxtBooking_BaggageItemsOption" xml:space="preserve">
+    <value>@@numOfItems@@ items (@@weight@@kg) - @@price@@</value>
+  </data>
+  <data name="ktxtBooking_NoBaggage" xml:space="preserve">
+    <value>No Baggage</value>
+  </data>
+  <data name="ktxtAccounts_LoginInvalidCredentials" xml:space="preserve">
+    <value>Your email and password don’t match. Please try again or register with Skyscanner.</value>
+  </data>
+  <data name="ktxtAccounts_LoginRegisterPrompt" xml:space="preserve">
+    <value>Not got a Skyscanner account?</value>
+  </data>
+  <data name="ktxtAccounts_LoginSocialFacebookLink" xml:space="preserve">
+    <value>Sign in with Facebook</value>
+  </data>
+  <data name="ktxtAccounts_LoginSocialGoogleLink" xml:space="preserve">
+    <value>Sign in with Google+</value>
+  </data>
+  <data name="ktxtAccounts_LoginSocialHeader" xml:space="preserve">
+    <value>Social network log in</value>
+  </data>
+  <data name="ktxtAccounts_LoginSocialSummary" xml:space="preserve">
+    <value>It’s quick, easy and we won’t post to your network without asking</value>
+  </data>
+  <data name="ktxtAccounts_LoginSocialTwitterLink" xml:space="preserve">
+    <value>Sign in with Twitter</value>
+  </data>
+  <data name="ktxtAccounts_LoginSocialWeiboLink" xml:space="preserve">
+    <value>Sign in with Weibo</value>
+    <comment>Please ensure "Weibo" is translated correctly for Chinese culture</comment>
+  </data>
+  <data name="ktxtAccounts_PasswordPlaceholder" xml:space="preserve">
+    <value>Password, minimum 8 characters</value>
+  </data>
+  <data name="ktxtAccounts_RegisterDifferentEmailLink" xml:space="preserve">
+    <value>Register with another email address</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationButton" xml:space="preserve">
+    <value>Create account</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationCheckInbox" xml:space="preserve">
+    <value>&lt;em&gt;Thanks!&lt;/em&gt; Check your inbox</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationConfirmationEmail" xml:space="preserve">
+    <value>Please click the "confirm email" button to verify your email address: @@email@@</value>
+    <comment>Please do not translate @@email@@</comment>
+  </data>
+  <data name="ktxtAccounts_RegistrationConfirmationSummary" xml:space="preserve">
+    <value>We’ll send you a confirmation email in a moment.</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationHeader" xml:space="preserve">
+    <value>Create a Skyscanner account</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationLoginPrompt" xml:space="preserve">
+    <value>Already got a Skyscanner account?</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationPasswordValidation" xml:space="preserve">
+    <value>Enter password, minimum 8 characters</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationUnconfirmedEmail" xml:space="preserve">
+    <value>You haven’t confirmed your email address since registering using: @@email@@</value>
+    <comment>Please do not translate @@email@@</comment>
+  </data>
+  <data name="ktxtAccounts_ResendConfirmationLink" xml:space="preserve">
+    <value>Resend confirmation email</value>
+  </data>
+  <data name="ktxtAccounts_ShowPassword" xml:space="preserve">
+    <value>Show password</value>
+  </data>
+  <data name="ktxtBooking_HoursSingleLetterAbbreviation" xml:space="preserve">
+    <value>@@hours@@h</value>
+  </data>
+  <data name="ktxtBooking_MinutesSingleLetterAbbreviation" xml:space="preserve">
+    <value>@@mins@@m</value>
+  </data>
+  <data name="ktxtAccounts_ForgottenPasswordInvalidEmail" xml:space="preserve">
+    <value>The email entered is not recognised. Try again or &lt;a href="registration"&gt;register here&lt;/a&gt;.</value>
+    <comment>Please do not translate the HTML tags (anywhere between &lt;&gt;).</comment>
+  </data>
+  <data name="ktxtAccounts_ForgottenPasswordNotSet" xml:space="preserve">
+    <value>You haven’t set up a password. To continue &lt;a href="registration"&gt;register here&lt;/a&gt;.</value>
+    <comment>Please do not translate the HTML tags (anywhere between &lt;&gt;).</comment>
+  </data>
+  <data name="ktxtBooking_EnterPostCode" xml:space="preserve">
+    <value>Enter post code</value>
+  </data>
+  <data name="ktxtAccounts_LoginRegisterNoAccount" xml:space="preserve">
+    <value>No Skyscanner account?</value>
+  </data>
+  <data name="ktxtAccounts_LoginSocialNetworkHeader" xml:space="preserve">
+    <value>Social network login</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationTerms" xml:space="preserve">
+    <value>By registering you agree to Skyscanner's &lt;a href='@@termsAndConditionsUrl@@' target='_blank'&gt;Terms of Service&lt;/a&gt;</value>
+  </data>
+  <data name="ktxtAccounts_TooShortPrompt" xml:space="preserve">
+    <value>Too short, minimum 8 characters</value>
+  </data>
+  <data name="ktxtAccounts_Validation_PasswordMatchesEmailAddress" xml:space="preserve">
+    <value>Your password can’t be your email address</value>
+  </data>
+  <data name="ktxtBooking_InvalidDateOfBirth" xml:space="preserve">
+    <value>Invalid date of birth</value>
+  </data>
+  <data name="ktxtBooking_ConfirmPageExit" xml:space="preserve">
+    <value>Are you sure you want to leave this page? Any information you have entered on the page will be lost.</value>
+  </data>
+  <data name="ktxtBooking_ConfirmationEmailSentTo" xml:space="preserve">
+    <value>We have sent a confirmation email to: @@tag@@ @@EmailAddress@@ @@tag@@</value>
+  </data>
+  <data name="ktxtBooking_ConfirmationPageTitle" xml:space="preserve">
+    <value>Your booking is confirmed</value>
+  </data>
+  <data name="ktxtBooking_ConfirmationThanksForBooking" xml:space="preserve">
+    <value>Thanks for booking your flight with @@ProviderName@@ via Skyscanner.</value>
+  </data>
+  <data name="ktxtBooking_InfoIconCharacter" xml:space="preserve">
+    <value>i</value>
+    <comment>Character displayed inside information icon</comment>
+  </data>
+  <data name="ktxtBooking_LoadingContentMessage" xml:space="preserve">
+    <value>Loading ...</value>
+    <comment>message displayed to advise user that content is loading</comment>
+  </data>
+  <data name="ktxtBooking_NeedAssistanceHeader" xml:space="preserve">
+    <value>Need assistance?</value>
+  </data>
+  <data name="ktxtBooking_NeedAssistanceMessage" xml:space="preserve">
+    <value>If you have any questions about your booking contact the @@ProviderName@@ service team at  @@ProviderNameEmailLink@@ or call: @@tag@@ @@ProviderContactNumber@@ @@tag@@</value>
+  </data>
+  <data name="ktxtBooking_YourReferenceNumber" xml:space="preserve">
+    <value>Your booking reference number is: @@tag@@ @@ReferenceNumber@@ @@tag@@</value>
+  </data>
+  <data name="ktxtBooking_CheckYourInbox" xml:space="preserve">
+    <value>Check your inbox, you will receive your confirmation and invoice via email soon.</value>
+  </data>
+  <data name="ktxtBooking_ConfirmationWhatHappensNextTitle" xml:space="preserve">
+    <value>What happens next?</value>
+  </data>
+  <data name="ktxtBooking_ReceivingYourEticket" xml:space="preserve">
+    <value>Your eTicket will then be sent in a separate email. Please note it can take up to 24 hours to receive your eTicket.</value>
+  </data>
+  <data name="ktxtBooking_AirportConnectionTime" xml:space="preserve">
+    <value>@@tag@@@@hours@@@@tag@@ connection time in airport</value>
+  </data>
+  <data name="ktxtBooking_HouseNumber" xml:space="preserve">
+    <value>House/flat number</value>
+  </data>
+  <data name="ktxtAnon_AnonLogin" xml:space="preserve">
+    <value>You’re logged in anonymously</value>
+  </data>
+  <data name="ktxtAnon_AnonLoginNoEmail" xml:space="preserve">
+    <value>You’re logged in anonymously so we don’t have your email address.</value>
+  </data>
+  <data name="ktxtAnon_AnonLoginNothingToDo" xml:space="preserve">
+    <value>So there’s nothing to do here.</value>
+  </data>
+  <data name="ktxtAnon_AnonSocialNet" xml:space="preserve">
+    <value>With anonymous log in you can enjoy most of what Skyscanner has to offer without providing your email address. You can upgrade to full Facebook log in later.</value>
+  </data>
+  <data name="ktxtAnon_Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="ktxtAnon_FullSocialNet" xml:space="preserve">
+    <value>Enjoy all Skyscanner features without creating a new account and password. All we need from your social network is your email.</value>
+  </data>
+  <data name="ktxtAnon_LogInAnon" xml:space="preserve">
+    <value>Log in Anonymously</value>
+  </data>
+  <data name="ktxtAnon_LogoutGoFull" xml:space="preserve">
+    <value>To receive these Price Alerts by email &lt;a href='@@logoutUrl@@'&gt; log out and switch to logging in with Facebook. &lt;/a&gt;</value>
+    <comment>Please do not translate the HTML tags (anywhere between &lt;&gt;).</comment>
+  </data>
+  <data name="ktxtAnon_WhatDifference" xml:space="preserve">
+    <value>What’s the difference?</value>
+  </data>
+  <data name="ktxtAnon_Anonymous" xml:space="preserve">
+    <value>anonymous</value>
+  </data>
+  <data name="ktxtBooking_BookingProcessInfoMessage" xml:space="preserve">
+    <value>Skyscanner will complete the booking process by sending your information to @@ProviderName@@. Upon the successful completion of your booking, you will receive a confirmation email. Please direct any questions about your booking to @@ProviderName@@.</value>
+  </data>
+  <data name="ktxtAccounts_RegistrationTermsAndPrivacyPolicy" xml:space="preserve">
+    <value>By signing up you agree to Skyscanner's &lt;a href='@@termsAndConditionsUrl@@' id='termsOfUse' target='_blank'&gt;Terms of Service&lt;/a&gt; and &lt;a href='@@privacyPolicyUrl@@' id='privacyPolicy' target='_blank'&gt;Privacy Policy&lt;/a&gt;</value>
+  </data>
+  <data name="ktxtAccounts_LoginSocialLinkedInLink" xml:space="preserve">
+    <value>Sign in with LinkedIn</value>
+  </data>
+  <data name="ktxtAccounts_LoginSocialVKontakteLink" xml:space="preserve">
+    <value>Sign in with VKontakte</value>
+  </data>
+  <data name="ktxtSubscriptions_CarHireAlertsUnsubscribed" xml:space="preserve">
+    <value>You've unsubscribed from Car Hire alerts</value>
+  </data>
+  <data name="ktxtSubscriptions_VisitTheHomepage" xml:space="preserve">
+    <value>&lt;a href="@@link@@"&gt;Visit the @@companyName@@ homepage&lt;/a&gt;</value>
+  </data>
+  <data name="ktxtSubscriptions_WontSendAnyMore" xml:space="preserve">
+    <value>We won't send you any more.</value>
+  </data>
+  <data name="ktxtPriceAlerts_AccountCreatedBody" xml:space="preserve">
+    <value>Manage your alerts and set up new ones with just one click</value>
+  </data>
+  <data name="ktxtPriceAlerts_AccountCreatedHeading" xml:space="preserve">
+    <value>&lt;em&gt;Your account is active!&lt;/em&gt; Welcome on board.</value>
+  </data>
+  <data name="ktxtPriceAlerts_ActivateAccountButton" xml:space="preserve">
+    <value>Activate account</value>
+  </data>
+  <data name="ktxtPriceAlerts_ActivateAccountHeading" xml:space="preserve">
+    <value>Activate your account now to get all this:</value>
+  </data>
+  <data name="ktxtPriceAlerts_CancelActivateAccount" xml:space="preserve">
+    <value>No thanks, I’m happy to miss out</value>
+  </data>
+  <data name="ktxtPriceAlerts_ChoosePassword" xml:space="preserve">
+    <value>Choose your password</value>
+  </data>
+  <data name="ktxtPriceAlerts_ConfirmationHeading" xml:space="preserve">
+    <value>&lt;em&gt;Thanks!&lt;/em&gt; We’ll email you when flight prices change.</value>
+  </data>
+  <data name="ktxtPriceAlerts_ManageAlerts" xml:space="preserve">
+    <value>Manage alerts in one place</value>
+  </data>
+  <data name="ktxtPriceAlerts_RecentSearches" xml:space="preserve">
+    <value>See your Recent Searches on all your devices</value>
+  </data>
+  <data name="ktxtPriceAlerts_SetupPriceAlerts" xml:space="preserve">
+    <value>Set up Price Alerts with one click</value>
+  </data>
+  <data name="ktxtPriceAlerts_TravelNews" xml:space="preserve">
+    <value>Send me travel news, inspiration and great deals</value>
+  </data>
+  <data name="ktxtUserAccount_LoginRegister" xml:space="preserve">
+    <value>Login / Register</value>
+  </data>
+  <data name="ktxtUserAccount_LogoutWithEmail" xml:space="preserve">
+    <value>Log out (@@email@@)</value>
+  </data>
+  <data name="ktx_Accounts_AccountNavigationTitle" xml:space="preserve">
+    <value>Your account</value>
+  </data>
+  <data name="ktx_Accounts_AccountNavigation_PATitle" xml:space="preserve">
+    <value>Price alert management</value>
+  </data>
+  <data name="ktxtAccounts_AccountBasics" xml:space="preserve">
+    <value>Account basics</value>
+  </data>
+  <data name="ktxtAccounts_CurrentPassword" xml:space="preserve">
+    <value>Current password</value>
+  </data>
+  <data name="ktxtAccounts_EmailAlreadyExistsOnAnotherUser" xml:space="preserve">
+    <value>Email adress: Another user already exists with that email address.</value>
+  </data>
+  <data name="ktxtAccounts_NoPasswordRequiredAsSocialProvider" xml:space="preserve">
+    <value>No password needed because you log in using your social network.</value>
+  </data>
+  <data name="ktxtAccounts_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ktxtAccounts_ThanksChangesMade" xml:space="preserve">
+    <value>&lt;em&gt;Thanks!&lt;/em&gt; Your changes have been made</value>
+    <comment>Please do not translate the &lt;em&gt; and &lt;/em&gt; tags</comment>
+  </data>
+  <data name="ktxtPriceAlerts_ActivateAccountExistingUserHeading" xml:space="preserve">
+    <value>&lt;em&gt;Great!&lt;/em&gt; Let's activate your account now to:</value>
+  </data>
+  <data name="ktxtPriceAlerts_RecentSearchesAnyDevcice" xml:space="preserve">
+    <value>See your Recent Searches on any device</value>
+  </data>
+  <data name="ktxtUserAccount_Subscriptions" xml:space="preserve">
+    <value>Subscriptions</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsCheckBox" xml:space="preserve">
+    <value>Send me the latest news, travel tips and deals from @@companyName@@</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsCheckBoxPartners" xml:space="preserve">
+    <value>Send me the latest news, travel tips and deals from @@companyName@@ and carefully selected partners</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsMessagesPartners" xml:space="preserve">
+    <value>Messages from our partners</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsMessagesSkyscanner" xml:space="preserve">
+    <value>Messages from @@companyName@@</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsNewsletters" xml:space="preserve">
+    <value>@@companyName@@ newsletters</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsNewslettersNewest" xml:space="preserve">
+    <value>Be the first to know about @@companyName@@'s newest products and features</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsNewslettersRegular" xml:space="preserve">
+    <value>Regular email with the best deals, tips and inspiration to help you plan your travels</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsNewslettersSkyscannerRegular" xml:space="preserve">
+    <value>Regular email with the best deals, tips and inspiration from @@companyName@@ to help you plan your travels</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsPa" xml:space="preserve">
+    <value>Looking for Price Alerts?</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsPaLink" xml:space="preserve">
+    <value>Create and manage Price Alerts here.</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsSuggestions" xml:space="preserve">
+    <value>Suggestions &amp; Recommendations</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsSuggestionsCarhire" xml:space="preserve">
+    <value>Timely @@companyName@@ car hire recommendations based on your Price Alerts</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsTravelOffers" xml:space="preserve">
+    <value>Travel offers</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsTravelOffersDeals" xml:space="preserve">
+    <value>Exclusive deals and special offers from our carefully selected partners (sent occasionally)</value>
+  </data>
+  <data name="ktxtUserAccount_EmailSubscriptionsCheckBox" xml:space="preserve">
+    <value>Email me the latest news, travel tips and deals from @@companyName@@</value>
+    <comment>new version of resource : ktxtUserAccount_SubscriptionsCheckBox</comment>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsEmailsPartners" xml:space="preserve">
+    <value>Emails from our partners</value>
+    <comment>new version of resource : ktxtUserAccount_SubscriptionsMessagesPartners</comment>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsEmailsSkyscanner" xml:space="preserve">
+    <value>Emails from @@companyName@@</value>
+    <comment>new version of resource : ktxtUserAccount_SubscriptionsMessagesSkyscanner</comment>
+  </data>
+  <data name="ktxtSubscriptions_HotelsAlertsUnsubscribed" xml:space="preserve">
+    <value>You've unsubscribed from Hotels alerts</value>
+  </data>
+  <data name="ktxtUserAccount_SubscriptionsSuggestionsHotels" xml:space="preserve">
+    <value>Timely @@companyName@@ hotel recommendations based on your Recent Searches</value>
+    <comment>Changed this as the statement was incorrect. It's Recent Searches and not Price Alerts. Price Alerts resource is ktxtPriceAlerts_PriceAlertsHeader. Recent Searches resource is ktxtTripPlanning_RecentSearchesTitle (scaffold).</comment>
+  </data>
+  <data name="ktxtAccounts_DeletedHeader" xml:space="preserve">
+    <value>Goodbye from Skyscanner</value>
+  </data>
+  <data name="ktxtAccounts_DeletedSob" xml:space="preserve">
+    <value>We hope to see you soon...sob...</value>
+    <comment>"Sob" may not translate very well in other languages. If this does not make sense then please translate without and end with a full stop.</comment>
+  </data>
+  <data name="ktxtAccounts_DeletedSummary" xml:space="preserve">
+    <value>Your account has been deleted which means you won't hear from us unless you register again.</value>
+  </data>
+  <data name="ktxtAccounts_DeleteHeader" xml:space="preserve">
+    <value>Delete Account</value>
+  </data>
+  <data name="ktxtAccounts_DeleteReasonHeader" xml:space="preserve">
+    <value>Did we do something wrong? Before you go, we'd love to know why you're leaving us (optional).</value>
+  </data>
+  <data name="ktxtAccounts_DeleteReasonOption1" xml:space="preserve">
+    <value>Not interested</value>
+  </data>
+  <data name="ktxtAccounts_DeleteReasonOption2" xml:space="preserve">
+    <value>Too many emails</value>
+  </data>
+  <data name="ktxtAccounts_DeleteReasonOption3" xml:space="preserve">
+    <value>Didn't subscribe</value>
+  </data>
+  <data name="ktxtAccounts_DeleteReasonOption4" xml:space="preserve">
+    <value>Something else?</value>
+  </data>
+  <data name="ktxtAccounts_DeleteReminder" xml:space="preserve">
+    <value>Don't forget! You can still use Skyscanner for free without an account.</value>
+  </data>
+  <data name="ktxtAccounts_DeleteSummary" xml:space="preserve">
+    <value>We're really sorry to see you go.</value>
+  </data>
+  <data name="ktxtAccounts_DeleteActionHeader" xml:space="preserve">
+    <value>Deleting account cannot be undone</value>
+  </data>
+  <data name="ktxtAccounts_DeleteReasonOption4_Placeholder" xml:space="preserve">
+    <value>Please explain</value>
+  </data>
+  <data name="ktxtAccounts_DeleteReasonLabel" xml:space="preserve">
+    <value>Reason(s) for leaving Skyscanner</value>
+    <comment>(s) - if this does not make sense to include plural in braces then it can just be removed and translated as singular "Reason"</comment>
+  </data>
+  <data name="ktxtAccounts_LoginSocialYahooJapanLink" xml:space="preserve">
+    <value>Sign in with Yahoo! Japan</value>
+  </data>
+  <data name="ktxtAccounts_UnsubscribeNewsletters" xml:space="preserve">
+    <value>Unsubscribe from newsletters</value>
+  </data>
+  <data name="ktxtPriceAlerts_StopAlertThisAlert" xml:space="preserve">
+    <value>Stop this alert</value>
+    <comment>Copy from Publisher project (ktxtPriceAlerts_StopAlert)</comment>
+  </data>
+</root>

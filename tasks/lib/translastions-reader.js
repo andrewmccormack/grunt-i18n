@@ -1,13 +1,16 @@
 'use strict';
 
-module.exports = function(resources, dataLoaderFactory){
+module.exports = function(grunt, files, options){
 
+    options = options || { defaultLocale : "en-gb"};
     var _ = require('lodash');
-    var localeHelper = require('./locale-helper')();
+    var dataloader = require('./data-loaders')(grunt);
+    var localeHelper = require('./locale-helper')(options.defaultLocale);
 
-    function TranslationFileReader(files){
+    function TranslationFileReader(files, template){
         this.files = files;
-    };
+        this.template = template
+    }
 
     TranslationFileReader.prototype.load = function(success, error) {
         var self = this;
@@ -15,9 +18,8 @@ module.exports = function(resources, dataLoaderFactory){
         error = error || function(ex) { throw ex; };
         _.forEach(this.files, function(file) {
             try {
-                var locale = localeHelper.getLocale(file, self.template);
-                var dataLoader = dataLoaderFactory.createDataLoader(file);
-                var data = dataLoader.getData();
+                var locale = localeHelper.getLocale(file);
+                var data = dataloader.getData(file);
                 success({
                     locale: locale,
                     data: data,
@@ -28,5 +30,5 @@ module.exports = function(resources, dataLoaderFactory){
             }
         });
     };
-    return new TranslationFileReader(resources.files);
+    return new TranslationFileReader(files, options.fileFormat);
 };
