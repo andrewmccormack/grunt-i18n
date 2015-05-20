@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "A grunt task that takes language resources and applies them to an underscore template file",
   "author": "Andrew McCormack <andrew.mccormack@skyscanner.net>",
-  "engines": {
-    "node": ">=0.10.0"
-  },
   "repository": {
     "type": "git",
     "url": "http://git.prod.skyscanner.local/AndrewMcCormack/grunt-i18n.git"
