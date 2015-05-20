@@ -1,18 +1,15 @@
 {
   "name": "grunt-i18n",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A grunt task that takes language resources and applies them to an underscore template file",
   "author": "Andrew McCormack <andrew.mccormack@skyscanner.net>",
   "repository": {
     "type": "git",
-    "url": "http://git.prod.skyscanner.local/AndrewMcCormack/grunt-i18n.git"
+    "url": "github:AndrewMcCormack/grunt-i18n.git"
   },
   "files": [
     "tasks"
   ],
-  "peerDependencies": {
-    "grunt": ">=0.4.0"
-  },
   "devDependencies": {
     "grunt-cli": "^0.1.13",
     "grunt-contrib-clean": "^0.6.0",
